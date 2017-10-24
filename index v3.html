@@ -4,8 +4,10 @@
             <title> Album Lab </title>
             <link rel="stylesheet" href="albumStyles.css">
             <style>
-                div {display: inline-block}
-                li  {text-align: left}
+                /*These internal style sheets format the unordered list of Band Members and Producer
+                /*Without the "class" designation, this formatting was impacting the "Tracks" table, also.*/
+                div.list {display: inline-block;}
+                li.list  {text-align: left;}
             </style>
         </head>
         <body>
@@ -16,18 +18,18 @@
             <h3> Released May 26, 1967 in the UK</h3>
             <hr/>
             <h2> Band Members and Producers</h2>
-            <div>
+            <div class="list">
                 <ul>
-                    <li>John Lennon - Guitar </li>
-                    <li>Paul McCartney - Lead Vocals </li>
-                    <li>Ringo Starr - Drums </li>
-                    <li>George Harrison - Lead Guitar </li>
-                    <li>George Martin - Producer </li>
+                    <li class="list">John Lennon - Guitar </li>
+                    <li class="list">Paul McCartney - Lead Vocals </li>
+                    <li class="list">Ringo Starr - Drums </li>
+                    <li class="list">George Harrison - Lead Guitar </li>
+                    <li class="list">George Martin - Producer </li>
                 </ul>
             </div>
             <h2>Tracks</h2>
             <div>
-                <table border="1" width=90%>
+                <table border="1" width=90% align="center">
                     <thead>
                         <tr bgcolor ="grey">
                             <th>Track#</th>
